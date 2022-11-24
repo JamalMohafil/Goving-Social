@@ -1,3 +1,4 @@
+
 const menuItem = document.querySelectorAll('.menu-item');
 
 const messagenot = document.querySelector('#messages-notification');
@@ -116,21 +117,22 @@ var btn_sub = document.getElementById('btn-sub');
 var input = document.getElementById('input');
 var content1 = document.getElementById('content');
 var content2 = document.getElementById('contentt');
-var name_1 = document.getElementById('name-1')
+var name_1 = document.getElementById("name-1")
 
-btn_sub.onclick = ()=>{
+btn_sub.addEventListener('click', ()=>{
 content1.style.display = "none";
 content2.style.display = 'flex';
-name_1.innerHTML =  input.value; //هي هون القيمة يلي رح تظهر
-localStorage.setItem("results",input.value) //تخزين القيمة يلي فوق
+name_1.innerText =  input.value; //هي هون القيمة يلي رح تظهر
+localStorage.setItem("name-1",input.value) //تخزين القيمة يلي فوق
 
-}
+})
 
+window.addEventListener('load',()=>{
+    const data = localStorage.getItem("name-1")
+    let text = document.createTextNode('Jamal Goving')
+      name_1.appendChild(text)
+    })
 
-
-onload = ()=>{
-name_1.value = localStorage.getItem("results",input.value) 
-}
 
 
 
@@ -249,3 +251,11 @@ Bg3.addEventListener('click',()=>{
     Bg2.classList.remove('activate')
     changeBG();
 })
+
+var mobile = document.getElementById('mobile-msg');
+var open = document.getElementById('open');
+
+open.onclick = ()=>{
+    mobile.style.display = 'grid';
+}
+
