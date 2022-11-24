@@ -706,6 +706,7 @@ background: hsl(252,75%,60%);
 }
 
 @media screen and (max-width:992px){
+
 nav .search-bar{
     display: none;
 }
@@ -738,13 +739,18 @@ main .container .right{
     display: none;
 }
 .customize-theme .card{
-    width: 92vw;
-}
+    width: 125vw;}
+    .customize-theme{
+        width: 155vw;
+    height: 144vh;
+    }
 }
 
-/* @media screen and (max-width:654px){
+
+
+ @media screen and (max-width:654px){
     main .container{
         grid-template-columns:  auto 1fr;
   
     }
-} */
+} 
