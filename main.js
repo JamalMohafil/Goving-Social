@@ -252,10 +252,5 @@ Bg3.addEventListener('click',()=>{
     changeBG();
 })
 
-var mobile = document.getElementById('mobile-msg');
-var open = document.getElementById('open');
 
-open.onclick = ()=>{
-    mobile.style.display = 'grid';
-}
 
