@@ -129,7 +129,7 @@ localStorage.setItem("name-1",input.value) //تخزين القيمة يلي فو
 
 window.addEventListener('load',()=>{
     const data = localStorage.getItem("name-1")
-    let text = document.createTextNode('Jamal Goving')
+    let text = document.createTextNode()
       name_1.appendChild(text)
     })
 
