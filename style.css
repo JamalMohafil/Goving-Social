@@ -5,6 +5,9 @@
 ::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
 }
+.arabic {
+font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
 :root{
     --primary-color-hue:252;
     --dark-color-lightness:17%;
